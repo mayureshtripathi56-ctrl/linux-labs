@@ -1,125 +1,104 @@
-Lesson 1 – What is an Operating System?
-Imagine This
+# Linux Basics
 
-Your laptop has:
+**Bootcamp:** 180-Day Cloud Architect Bootcamp
 
-CPU
-RAM
-SSD
-Keyboard
-Mouse
-Screen
+**Day:** 01
 
-Can these communicate with each other on their own?
+**Author:** Mayuresh Tripathi
 
-❌ No.
+---
 
-They need a manager.
+# Learning Objectives
 
-That manager is called an Operating System (OS).
+By the end of Day 1, I should be able to:
 
-Definition
+- Understand what an Operating System is.
+- Explain Linux and its importance in Cloud Computing.
+- Understand Linux Architecture.
+- Explain the Kernel, Shell, and Terminal.
+- Understand why Linux is the preferred operating system for cloud environments.
+
+---
+
+# What is an Operating System (OS)?
+
+## Definition
 
 An Operating System (OS) is system software that manages computer hardware and software resources and provides services for applications and users.
 
-Examples
-Windows
-Linux
-macOS
-Android
-iOS
-Lesson 2 – What is Linux?
+It acts as an interface between the user and the computer hardware.
 
-Linux is an operating system (more precisely, Linux is the kernel, and operating systems built around it are called Linux distributions).
+---
 
-Think of Linux as another operating system like Windows, but it is:
+## Responsibilities of an Operating System
 
-Stable
-Secure
-Fast
-Highly customizable
-Preferred for servers and cloud environments
-Lesson 3 – Why Do Cloud Companies Prefer Linux?
+- Manages CPU
+- Manages Memory (RAM)
+- Manages Storage
+- Manages Files
+- Manages Processes
+- Controls Input and Output Devices
+- Provides Security
+- Runs Applications
 
-Suppose Amazon has 10,000 servers.
+---
 
-They want:
+## Examples of Operating Systems
 
-✅ Fast performance
+- Windows
+- Linux
+- macOS
+- Android
+- iOS
 
-✅ Low cost
+---
 
-✅ High security
+# What is Linux?
 
-✅ Easy automation
+## Definition
 
-Linux provides these advantages.
+Linux is an open-source operating system based on the Linux Kernel. It is widely used in servers, cloud computing, embedded systems, and enterprise environments because of its stability, security, flexibility, and performance.
 
-That's why most cloud servers run Linux.
+---
 
-Lesson 4 – What is the Kernel?
+## Features of Linux
 
-Imagine your car.
+- Open Source
+- Secure
+- Stable
+- Reliable
+- Fast
+- Multi-user
+- Multitasking
+- Highly Customizable
 
-You press the accelerator.
+---
 
-Does the engine know automatically?
+# Why is Linux Important for Cloud Computing?
 
-No.
+Most cloud platforms use Linux because it is:
 
-Something transfers your command.
-
-Similarly:
-
-User
-   ↓
-Shell
-   ↓
-Kernel
-   ↓
-Hardware
-
-The Kernel is the core part of the operating system.
-
-Definition
-
-The Kernel is the core component of an operating system that manages hardware resources and acts as a bridge between applications and the hardware.
-
-Lesson 5 – What is the Shell?
-
-The Shell is your interpreter.
-
-You type:
-
-mkdir Project
-
-The Shell understands your command and asks the Kernel to perform the action.
-
-Definition
-
-The Shell is a command interpreter that accepts user commands and communicates with the Kernel to execute them.
-
-Lesson 6 – What is the Terminal?
-
-The Terminal is simply the application where you type commands.
+- Cost-effective (no licensing fees for many distributions)
+- Stable for long-running servers
+- Highly secure
+- Lightweight
+- Easy to automate
+- Excellent for networking
+- Well supported by cloud tools
 
 Examples:
 
-Windows Terminal
-PowerShell
-Command Prompt
-Ubuntu Terminal
+- AWS EC2
+- Microsoft Azure Virtual Machines
+- Google Cloud Compute Engine
 
-Think of it like this:
+Most production servers on these platforms run Linux.
 
-Terminal = Classroom
+---
 
-Shell = Teacher
+# Linux Architecture
 
-Kernel = Principal
-
-Hardware = School
-Linux Architecture
+```
 +-----------------------+
 |        User           |
 +-----------------------+
@@ -138,19 +117,207 @@ Linux Architecture
 +-----------------------+
 |      Hardware         |
 +-----------------------+
-Interview Definitions
-What is Linux?
+```
 
-Linux is a secure, stable, and open-source operating system widely used in servers, cloud computing, embedded systems, and enterprise environments.
+---
 
-What is Kernel?
+# What is the Kernel?
 
-The Kernel is the core component of an operating system responsible for managing hardware resources, memory, processes, and communication between software and hardware.
+## Definition
 
-What is Shell?
+The Kernel is the core component of the operating system that manages hardware resources and acts as a bridge between software and hardware.
 
-The Shell is a command-line interpreter that accepts user commands and communicates with the Kernel to execute them.
+---
 
-What is Terminal?
+## Responsibilities of the Kernel
 
-The Terminal is the application that provides an interface for users to interact with the operating system through command-line instructions.
+- Process Management
+- Memory Management
+- Device Management
+- File System Management
+- Resource Allocation
+- Hardware Communication
+
+---
+
+# What is the Shell?
+
+## Definition
+
+The Shell is a command interpreter that accepts user commands and communicates with the Kernel to execute those commands.
+
+---
+
+## Responsibilities of the Shell
+
+- Reads user commands
+- Interprets commands
+- Passes commands to the Kernel
+- Displays command output
+
+---
+
+# What is the Terminal?
+
+## Definition
+
+The Terminal is the application through which users interact with the Shell by typing command-line instructions.
+
+Examples:
+
+- Windows Terminal
+- PowerShell
+- Ubuntu Terminal
+- GNOME Terminal
+
+---
+
+# Difference Between Terminal and Shell
+
+| Terminal | Shell |
+|----------|-------|
+| Application | Command Interpreter |
+| Accepts user input | Executes commands |
+| Provides user interface | Communicates with Kernel |
+
+---
+
+# Difference Between Kernel and Shell
+
+| Kernel | Shell |
+|---------|-------|
+| Core of the Operating System | Command Interpreter |
+| Directly communicates with hardware | Communicates with the Kernel |
+| Manages system resources | Executes user commands |
+
+---
+
+# Why Do Cloud Engineers Learn Linux?
+
+Cloud Engineers use Linux because:
+
+- Most cloud servers run Linux.
+- Docker is Linux-based.
+- Kubernetes primarily manages Linux containers.
+- Automation tools work extensively with Linux.
+- Server administration is commonly performed on Linux systems.
+
+Linux is considered one of the foundational skills for Cloud Engineering and DevOps.
+
+---
+
+# Real-Life Analogy
+
+Imagine a company.
+
+User → Employee
+
+Shell → Receptionist
+
+Kernel → Operations Manager
+
+Hardware → Office Staff
+
+The employee tells the receptionist what needs to be done.
+
+The receptionist forwards the request to the operations manager.
+
+The operations manager coordinates with the staff to complete the work.
+
+Similarly:
+
+User → Shell → Kernel → Hardware
+
+---
+
+# Interview Questions
+
+## Q1. What is an Operating System?
+
+An Operating System is system software that manages hardware and software resources while providing services for applications and users.
+
+---
+
+## Q2. What is Linux?
+
+Linux is an open-source operating system based on the Linux Kernel. It is widely used in cloud computing, servers, and enterprise environments because of its security, stability, and performance.
+
+---
+
+## Q3. Why is Linux preferred in Cloud Computing?
+
+Linux is preferred because it is secure, stable, lightweight, cost-effective, highly customizable, and easy to automate, making it ideal for cloud servers.
+
+---
+
+## Q4. What is the Kernel?
+
+The Kernel is the core component of the operating system responsible for managing hardware resources, memory, processes, and communication between software and hardware.
+
+---
+
+## Q5. What is the Shell?
+
+The Shell is a command-line interpreter that accepts user commands and communicates with the Kernel to execute those commands.
+
+---
+
+## Q6. What is a Terminal?
+
+The Terminal is an application that allows users to interact with the operating system through the Shell by entering command-line instructions.
+
+---
+
+## Q7. Differentiate between Kernel and Shell.
+
+The Kernel manages hardware resources and system operations, whereas the Shell interprets user commands and forwards them to the Kernel for execution.
+
+---
+
+# Key Terminologies
+
+| Term | Meaning |
+|------|---------|
+| Operating System | Software that manages computer resources |
+| Linux | Open-source operating system |
+| Kernel | Core component of the OS |
+| Shell | Command interpreter |
+| Terminal | Application used to access the Shell |
+
+---
+
+# Quick Revision
+
+Operating System = Manages the computer
+
+Linux = Open-source Operating System
+
+Kernel = Core of the Operating System
+
+Shell = Command Interpreter
+
+Terminal = Application used to type commands
+
+Linux = Foundation of Cloud Computing
+
+---
+
+# Key Takeaways
+
+- Linux is the most widely used operating system in cloud computing.
+- The Kernel is the heart of the operating system.
+- The Shell interprets commands entered by the user.
+- The Terminal is the interface used to interact with the Shell.
+- Learning Linux is essential for becoming a Cloud Engineer or Cloud Architect.
+
+---
+
+# Mentor's Tip
+
+Don't memorize Linux definitions.
+
+Instead, understand **how each component works together**:
+
+User → Terminal → Shell → Kernel → Hardware
+
+When you understand this flow, learning Linux commands becomes much easier.
